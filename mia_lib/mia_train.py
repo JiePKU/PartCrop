@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import random
 import numpy as np
-# from log import  print_and_log
 import time
 from mia_lib.mia_util import  obtain_membership_feature
 

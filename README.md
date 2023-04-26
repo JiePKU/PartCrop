@@ -1,6 +1,6 @@
 ### PartCorp: A Unified Membership Inference Method for Self-supervised Learning via Part-aware Capability
 
-![MiniCrop](https://github.com/JiePKU/MiniCrop/blob/master/img/MiniCrop.JPG "MiniCrop") 
+![MiniCrop](https://github.com/JiePKU/MiniCrop/blob/master/img/PartCrop.JPG "PartCrop") 
 
 ### Requirements
 * Python 3.8

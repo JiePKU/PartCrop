@@ -1,6 +1,5 @@
 import torch
 import torch.nn.functional as F
-# from log import  print_and_log
 import numpy as np
 import random
 
@@ -27,9 +26,7 @@ def mia_evaluate(args, model, adversary, device, infset_loader, is_test_set=Fals
             te_outputs = model(te_inputs)
 
             tr_features = obtain_membership_feature(tr_outputs[0],tr_outputs[1], feature_type=args.feature)
-            # print(tr_features[0])
             te_features = obtain_membership_feature(te_outputs[0],te_outputs[1], feature_type=args.feature) 
-            # print(te_features[0])
             
             v_is_member_labels = torch.from_numpy(
             np.reshape(np.concatenate((np.ones(tr_features.size(0)), np.zeros(te_features.size(0)))), [-1, 1])).to(device).float()

@@ -182,9 +182,6 @@ def get_cifar100_dataloaders(args):
     cifar100_mean = (0.5070751592371323, 0.48654887331495095, 0.4409178433670343)
     cifar100_std = (0.2673342858792401, 0.2564384629170883, 0.27615047132568404)
 
-    # cifar100_mean=[0.485, 0.456, 0.406]
-    # cifar100_std=[0.229, 0.224, 0.225]
-
     train_transform = DataAugmentation(args.img_size, args.img_size//2, cifar100_mean, cifar100_std, args.global_crops_scale, args.local_crops_scale,args.local_crops_number, is_train=True)
 
     test_transform = DataAugmentation(args.img_size, args.img_size//2, cifar100_mean, cifar100_std, args.global_crops_scale, args.local_crops_scale,args.local_crops_number, is_train=False)
@@ -225,9 +222,6 @@ def get_cifar10_dataloaders(args):
 
     cifar10_mean = (0.4914, 0.4822, 0.4465)
     cifar10_std = (0.2023, 0.1994, 0.2010)
-
-    # cifar10_mean=[0.485, 0.456, 0.406]
-    # cifar10_std=[0.229, 0.224, 0.225]
 
     train_transform = DataAugmentation(args.img_size, args.img_size//2, cifar10_mean, cifar10_std, args.global_crops_scale, args.local_crops_scale,args.local_crops_number, is_train=True)
 

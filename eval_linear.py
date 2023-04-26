@@ -173,13 +173,6 @@ def train(model, linear_classifier, optimizer, loader, epoch, n, avgpool):
 
         # forward
         with torch.no_grad():
-            # if "vit" in args.arch:
-            #     intermediate_output = model.get_intermediate_layers(inp, n)
-            #     output = torch.cat([x[:, 0] for x in intermediate_output], dim=-1)
-            #     if avgpool:
-            #         output = torch.cat((output.unsqueeze(-1), torch.mean(intermediate_output[-1][:, 1:], dim=1).unsqueeze(-1)), dim=-1)
-            #         output = output.reshape(output.shape[0], -1)
-            # else:
             output = model(inp)
         output = linear_classifier(output)
 

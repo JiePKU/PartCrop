@@ -2,20 +2,6 @@ import torch
 import torch.nn as nn
 
 
-"""
-This model is referred to paper:
-
-"Machine Learning with Membership Privacy using Adversarial Regularization"
-
-More detail can be found in:
-https://dl.acm.org/doi/abs/10.1145/3243734.3243855
-
-this code is implemented in 2022.01.03 
-
-version : v1
-
-"""
-
 class Adversary(nn.Module):   #  black-box setting
     def __init__(self, input_dim=128):
         super(Adversary, self).__init__()
