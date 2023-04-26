@@ -1,4 +1,4 @@
-### MiniCrop: MiniCorp: A Unified Membership Inference Method for Self-supervised Learning via Image Mini-crops
+### PartCorp: A Unified Membership Inference Method for Self-supervised Learning via Part-aware Capability
 
 ![MiniCrop](https://github.com/JiePKU/MiniCrop/blob/master/img/MiniCrop.JPG "MiniCrop") 
 
