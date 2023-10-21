@@ -1,4 +1,4 @@
-### PartCorp: A Unified Membership Inference Method for Self-supervised Learning via Part-aware Capability
+### PartCrop: A Unified Membership Inference Method for Visual Self-supervised Encoder via Part-aware Capability
 
 ![PartCrop](https://github.com/JiePKU/MiniCrop/blob/master/img/PartCrop.JPG "PartCrop") 
 
