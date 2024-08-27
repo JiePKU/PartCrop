@@ -1,4 +1,4 @@
-### PartCrop: A Unified Membership Inference Method for Visual Self-supervised Encoder via Part-aware Capability
+### ”PartCrop: A Unified Membership Inference Method for Visual Self-supervised Encoder via Part-aware Capability“ has been accepted by ACM CCS2024!!! [[Arxiv](https://arxiv.org/abs/2404.02462)]  
 
 ![PartCrop](https://github.com/JiePKU/MiniCrop/blob/master/img/PartCrop.JPG "PartCrop") 
 
