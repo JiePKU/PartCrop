@@ -3,6 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import random
 import numpy as np
+from itertools import cycle
+# from log import  print_and_log
 import time
 from mia_lib.mia_util import  obtain_membership_feature
 
@@ -66,6 +68,7 @@ def mia_train(args, model, adversary, device, \
     # for batch_idx, (data, target) in enumerate(zip(known_loader, cycle(refer_loader))):
     end = time.time()
     first_id = -1
+    N = args.local_crops_number
     # when short dataloader is over, thus end
     for batch_idx, ((tr_inputs, _), (te_inputs, _)) in  train_private_enum:
         # measure data loading time
@@ -82,6 +85,9 @@ def mia_train(args, model, adversary, device, \
         with torch.no_grad():
             tr_outputs = model(tr_inputs)
             te_outputs = model(te_inputs)
+
+            tr_outputs[1] = torch.cat(tr_outputs[1].chunk(N), dim=1)
+            te_outputs[1] = torch.cat(te_outputs[1].chunk(N), dim=1)
 
             tr_features = obtain_membership_feature(tr_outputs[0],tr_outputs[1], feature_type=args.feature)
             te_features = obtain_membership_feature(te_outputs[0],te_outputs[1], feature_type=args.feature)
