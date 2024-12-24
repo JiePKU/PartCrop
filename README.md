@@ -1,4 +1,4 @@
-### ”PartCrop: A Unified Membership Inference Method for Visual Self-supervised Encoder via Part-aware Capability“ has been accepted by ACM CCS2024!!! [[Arxiv](https://arxiv.org/abs/2404.02462)]  
+### ”PartCrop: A Unified Membership Inference Method for Visual Self-supervised Encoder via Part-aware Capability“ has been accepted by ACM CCS2024!!! [[Arxiv](https://arxiv.org/abs/2404.02462)]  [[CCS](https://dl.acm.org/doi/abs/10.1145/3658644.3690202)]
 
 ![PartCrop](https://github.com/JiePKU/MiniCrop/blob/master/img/PartCrop.JPG "PartCrop") 
 
@@ -67,4 +67,16 @@ Perform image classification on CIFAR100 using DINO
         --num_workers 16 \
         --output_dir /path/to/save/linear_model \
         --num_labels 100 \
+```
+
+Cite our paper
+
+```
+@inproceedings{zhu2024unified,
+  title={A unified membership inference method for visual self-supervised encoder via part-aware capability},
+  author={Zhu, Jie and Zha, Jirong and Li, Ding and Wang, Leye},
+  booktitle={Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security},
+  pages={1241--1255},
+  year={2024}
+}
 ```
