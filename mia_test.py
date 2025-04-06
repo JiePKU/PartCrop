@@ -122,6 +122,7 @@ def main(args):
         acc = mia_evaluate(args, model, attacker, device, private_testset, is_test_set=False)
         
         if acc >= best_acc:
+            best_acc = acc
             save_checkpoints(args, attacker, epoch, 'best.pth')
 
         save_checkpoints(args, attacker, epoch, 'last.pth')
